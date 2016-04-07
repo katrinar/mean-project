@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="LandingPage">
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/controllers/home.js"></script>
   </head>
-  <body>
+  <body id="page-top" class="index" ng-controller="HomeController" ng-init="init()">
     <h1>{{ title }}</h1>
     <p>Welcome {{ name }}, how is {{ city }}?</p>
     <p>Your favorite movie is {{ favMovie }}</p>
