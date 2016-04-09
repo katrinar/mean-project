@@ -4,8 +4,16 @@ homeCtr.controller('HomeController', ['$scope', function($scope){
 
 	$scope.profile = {
 		name: 'Rafael Nadal',
+		city: 'Madrid',
 		job: 'Tennis Stahh'
 	}
+
+
+	$scope.people = [
+		{name: 'hillary clinton', city: 'new york', job: 'secretary of state'},
+		{name: 'bernie sanders', city: 'vermont', job: 'congressman'},
+		{name: 'michael bloomberg', city: 'new york', job: 'millionaire'}
+	]
 
 	$scope.visitor = {
 		name: '',
